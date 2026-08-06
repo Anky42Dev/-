@@ -13,7 +13,7 @@ def linear_search(arr,target):
             return i
     return -1
 print(linear_search(arr,target))
-arr = [2,5,48,14,20,27,35,9,60,77]
+arr = [2,5,9,14,20,27,35,48,60,77]
 target = 48
 def binary_search(arr,target):
     left = 0 
