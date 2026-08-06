@@ -1,8 +1,10 @@
-books = {'Лолита':'Набоков',
-         '451 по Фаренгейту':'Рэй Брэдбери',
-         '10 негритят':'Агата Кристи'}
+books = [{'title':'Лолита','author':'Набоков'},
+         {'title':'451 по Фаренгейту','author':'Рэй Брэдбери'},
+         {'title':'10 негритят','author':'Агата Кристи'}]
 def find_by_author(author):
-    for title,book_author in books.items():
-        if author == book_author:
-            return title
-    return 'Книги этого автора нет'
+        result = []
+        for book in books:
+            if book['author'] == author:
+                result.append(book['title'])
+        return ','.join(result)
+
